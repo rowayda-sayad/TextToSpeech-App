@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
             //flush to empty
-            tts.speak("Hi Hazem", TextToSpeech.QUEUE_FLUSH, null);
+            tts.speak("Hi there", TextToSpeech.QUEUE_FLUSH, null);
         } else if (status == TextToSpeech.ERROR) {
             Toast.makeText(MainActivity.this, "TTS failed", Toast.LENGTH_SHORT).show();
             tts.shutdown();
